@@ -1,0 +1,25 @@
+#balance-box{
+    background-image: url("../img/piggy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bank-cash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #793457;
+    font-weight: bold;
+}
+h3{
+    color: #793457;
+}
+.center-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+body{
+    background: #FFF0F0 !important;
+}
