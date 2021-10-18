@@ -1,53 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piggy bank</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="scripts/script.js"></script>
+    <title>HOW MANY DAYS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="./days/style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./days/scripts/date.js" defer></script>
+    <script src="./days/scripts/calculator.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="m-4">
-            <h3 class="text-center">PIGGYBANK</h3>
-        </div>
-        <div class="row gx-4 mx-auto">
-            <div id="balance-box" class="col border m-4 p-4">
-                    <span id="bank-cash">0.00 PLN</span> 
-            </div>
-            <div class="col border m-4 p-4">
-                <form action="">
-                    <label for="cash" class="form-label">SUM:</label>
-                    <input type="number" id="cash" class="form-control" placeholder="0.00 PLN">
-                    <button type="button" id="add" class="btn btn-primary my-2 float-end">ADD</button>
-                </form>
-            </div>
-            <div class="col border m-4 p-4">
-                <div class="center-button">
-                    <button id="clear" class="btn btn-danger border">CRASH PIGGYBANK</button>
-                </div>
-            </div>
-        </div>
-        <div class="row gx-5 mx-auto">
-            <div class="col border m-4 p-4">
-                <table class="table table-striped table-responsive table-hover">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Date</th>
-                                <th>Sum</th>
-                                <th>Balance</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                </table>
-            </div>
-        </div>
+    <div id="main-title">
+    <h1>Check how many days there are beetwen dates.</h1>
     </div>
+    <div id="time"></div>
+    <div id="date-box">
+        <input type="date" id="start" min="1990-01-01" max="2030-12-31">
+        <input type="date" id="end" min="1990-01-01" max="2030-12-31">
+        <button id="check">CHECK IT</button>
+    </div>
+    <div id="result"></div>
+    
 </body>
 </html>
